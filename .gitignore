@@ -161,3 +161,4 @@ cython_debug/
 .idea/
 
 credit_score_classification/credit_score.ipynb
+online_fraud_detection/credit_card.csv
