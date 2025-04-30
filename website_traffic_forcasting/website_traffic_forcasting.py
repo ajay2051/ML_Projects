@@ -6,3 +6,6 @@ from statsmodels.tsa.seasonal import seasonal_decompose
 from statsmodels.graphics.tsaplots import plot_pacf
 from statsmodels.tsa.arima_model import ARIMA
 import statsmodels.api as sm
+
+data = pd.read_csv("Thecleverprogrammer.csv")
+print(data.head())
