@@ -9,3 +9,9 @@ import statsmodels.api as sm
 
 data = pd.read_csv("Thecleverprogrammer.csv")
 print(data.head())
+
+plt.style.use('fivethirtyeight')
+plt.figure(figsize=(15, 10))
+plt.plot(data["Date"], data["Views"])
+plt.title("Daily Traffic of Thecleverprogrammer.com")
+plt.show()
