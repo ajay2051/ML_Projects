@@ -15,3 +15,10 @@ plt.figure(figsize=(15, 10))
 plt.plot(data["Date"], data["Views"])
 plt.title("Daily Traffic of Thecleverprogrammer.com")
 plt.show()
+
+result = seasonal_decompose(data["Views"],
+                            model='multiplicative',
+                            freq = 30)
+fig = plt.figure()
+fig = result.plot()
+fig.set_size_inches(15, 10)
